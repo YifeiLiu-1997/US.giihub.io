@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>第一次唱歌</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link href="../special/两个心.png" rel="shortcut icon" />
+    <script src="../layui/echarts.js"></script>
+    <style>
+        .pimg {
+            height: 440px;
+            width: auto;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+
+</head>
+<body>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px; text-align: center">
+    <legend>第一次唱歌</legend>
+</fieldset>
+
+<div style="padding: 20px; background-color: #F2F2F2;">
+    <div class="layui-row layui-col-space15">
+        <!--轮播图部分-->
+        <div class="layui-col-md6">
+            <div class="layui-carousel" id="test1" lay-filter="test1">
+                <div carousel-item="">
+                    <div>
+                        <img class="pimg" src="imgs/sing_4.jpg" alt="" >
+                    </div>
+                    <div>
+                        <img class="pimg" src="imgs/sing_1.jpg" alt="" >
+                    </div>
+                    <div>
+                        <img class="pimg" src="imgs/sing_2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="pimg" src="imgs/sing_3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--正文部分-->
+        <div class="layui-col-md6">
+            <div class="layui-card">
+                <div class="layui-card-header">第一次唱歌</div>
+                <div class="layui-card-body" id="information" style="height: 378px">
+                    清晨，矗立在门口，某人脚踩着兴奋向门外走来（其实我也因为兴奋垫着脚尖）。
+                    阳光照射在你的身上，哇，女神来了，害羞。KTV从来没有唱过歌的我，今天
+                    和我小公主预谋了一场盛大的活动，好吧形容的太烂了。你还记得吗，今天你穿的
+                    超短裤，虽然我很不乐意吧，咱们遇到了此生最爱小吃店之一，鱼本鱼。唱歌的时候
+                    完全没有我想的紧张感，嗷，零食还是很好吃的哈哈哈哈哈哈，你还记得唱歌的时候
+                    抱了多久嘛！最后还闹了一点点别扭，我错啦！
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="../layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript">
+    layui.use(['carousel', 'form'], function() {
+        var carousel = layui.carousel
+            , form = layui.form;
+
+        //图片轮播
+        carousel.render({
+            elem: '#test1'
+            ,width: '100%'
+            ,height: '440px'
+            ,interval: 4000
+            ,marginLeft: '100px'
+            ,indicator: 'outside'
+            ,trigger: 'click'
+            ,arrow: 'always'
+        });
+    });
+
+    //密码
+    function password() {
+        var testV = 1;
+        var pass1 = prompt('请输入密码','');
+        while (testV < 2) {
+            if (pass1 == "1223") {
+                alert('密码正确!');
+                break;
+            }
+            testV+=1;
+            var pass1 =
+                prompt('密码错误!请重新输入:');
+        }
+        if (pass1!="password" & testV == 2)
+            window.location.href = window.document.referrer;
+        return ""
+    }
+    document.write(password());
+</script>
+</html>
