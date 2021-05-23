@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>JJ and FF</title>
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/short-cut-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="skins/eden.css" media="screen">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link href="fonts/icons/icons.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <style>
+        h4{
+            color: #2ccdb3;
+        }
+        #time{
+            display: inline;
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+
+<body   data-spy="scroll" data-target="#topnav"  id="top">
+
+    <section class="header-area-home" id="header-area-home">
+            <!--上栏部分-->
+            <div id="main-nav-container">
+                <div class="container">
+                    <!--nav栏目部分-->
+                    <nav class="navbar navbar-eden" id="topnav">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#main-menu">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <i class="tn-menu"></i>
+                                </button>
+                                <a class="navbar-brand" href="#"><img src="imgs/logo-front.png" /></a>
+                            </div>
+
+                            <div class="collapse navbar-collapse" id="main-menu">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#top">Home</a></li>
+                                    <li><a href="#our-journey">我们的旅程</a></li>
+                                    <li><a href="#our-story">我们的故事</a></li>
+                                    <li><a href="#next-move">后续。。。</a></li>
+                                    <li><a href="#photo-album">相册（敬请期待）</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!--slider-container-->
+            <div id="featured-slider-container" style="height: 820px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="featured-slider" class="carousel slide" data-ride="carousel">
+                                <!-- slide栏指示器 -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#featured-slider" data-slide-to="0" class="active"><img src='imgs/slider-1-t.jpg' alt='' class='featured-slide-thumb'  /></li>
+                                    <li data-target="#featured-slider" data-slide-to="1" ><img src='imgs/slider-2-t.jpg' alt='' class='featured-slide-thumb'  /></li>
+                                    <li data-target="#featured-slider" data-slide-to="2" ><img src='imgs/slider-3-t.jpg' alt='' class='featured-slide-thumb'  /></li>
+                                </ol>
+                                <!-- slides栏 -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!--slide1-->
+                                    <div class="item active" id="slide-2">
+                                        <br>
+                                        <img src='imgs/slider-1.jpg' alt='' class='featured-slide inv' data-animation = 'animated zoomIn' data-delay = '0.3s' />
+                                        <div class="carousel-caption">
+                                            <span class="lead slide-cat inv"  data-animation="animated zoomIn">欢迎光临</span>
+                                            <h2 class="slide-title inv"  data-animation="animated fadeInUp" data-duration="2s" data-delay="1s">这里充满了喜悦，喜悦和喜悦</h2>
+                                            <div class="slide-excerpt inv" data-animation="animated fadeInUp" data-duration="3s" data-delay="2s">
+                                                <ul class="row">
+                                                    <li class="col-lg-12" data-animation = 'animated zoomIn' data-delay = '2s'>有你和我的旅途</li>
+                                                    <li class="col-lg-12" data-animation = 'animated zoomIn' data-delay = '2.1s'>有你和我的故事</li>
+                                                    <li class="col-lg-12" data-animation = 'animated zoomIn' data-delay = '2.2s'>有你和我的记忆</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--slide2-->
+                                    <div class="item" id="slide-3">
+                                        <br>
+                                        <img src='imgs/slider-2.jpg' alt='' class='featured-slide inv' data-animation = 'animated zoomIn' data-delay = '0.3s' />
+                                        <div class="carousel-caption">
+                                            <span class="lead slide-cat inv"  data-animation="animated zoomIn">我们的家</span>
+                                            <h2 class="slide-title inv"  data-animation="animated fadeInUp" data-duration="2s" data-delay="1s">有你的地方就是家</h2>
+                                            <div class="slide-excerpt inv" data-animation="animated fadeInUp" data-duration="3s" data-delay="2s"></div>
+                                        </div>
+                                    </div>
+                                    <!--slide3-->
+                                    <div class="item" id="slide-4">
+                                        <br>
+                                        <img src='imgs/slider-3.jpg'  alt='' class='featured-slide inv' data-animation = 'animated zoomIn' data-delay = '0.3s' />
+                                        <div class="carousel-caption">
+                                            <span class="lead slide-cat inv"  data-animation="animated zoomIn">我的宝宝</span>
+                                            <h2 class="slide-title inv"  data-animation="animated fadeInUp" data-duration="2s" data-delay="1s">我的，美貌与智慧并存的宝宝</h2>
+                                            <div class="slide-excerpt inv" data-animation="animated fadeInUp" data-duration="3s" data-delay="2s">她的成分:
+                                                <ul class="row">
+                                                    <li class="col-lg-6" data-animation = 'animated zoomIn' data-delay = '2s'>100分的美貌</li>
+                                                    <li class="col-lg-6" data-animation = 'animated zoomIn' data-delay = '2.1s'>100分的有趣</li>
+                                                    <li class="col-lg-6" data-animation = 'animated zoomIn' data-delay = '2.2s'>100分的善良</li>
+                                                    <li class="col-lg-6" data-animation = 'animated zoomIn' data-delay = '2.3s'>100分的专一</li>
+                                                    <li class="col-lg-6" data-animation = 'animated zoomIn' data-delay = '2.4s'>100分的可爱</li>
+                                                    <li class="col-lg-6" data-animation = 'animated zoomIn' data-delay = '2.5s'>10000分的魅力！</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--完成-->
+    <!--our-journey-->
+    <section class="our-journey" id="our-journey">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center section-intro">
+                    <h2 class="header-boxed wow zoomIn" data-wow-iteration="1"><span>我们的旅程</span></h2>
+                    <p class="lead wow fadeInUp"  data-wow-delay="600ms">从2019.12.23相识，已经度过<div id="time"></div></p>
+                </div>
+                <div class="col-md-12 highlight-boxes">
+                    <div class="col-md-4 wow fadeInLeft" data-wow-delay="500ms" style="height: 360px">
+                        <div class="featured-content-box text-center">
+                            <i class="tn-heart ico-lg text-warning" style="color: #cd3d04"></i>
+                            <h3>我们相遇</h3>
+                            <p>2019年10月26日，从一条简简单单的微信问候开始，简直就是一发不可收拾，初中的感情延续到现在依然不减，
+                            从这一天开始，我的世界里多了一道光。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow zoomIn" data-wow-delay="100ms" style="height: 360px">
+                        <div class="featured-content-box text-center">
+                            <i class="tn-heart ico-lg text-warning"></i>
+                            <h3>在一起</h3>
+                            <p>2019年12月23日，我们正式在一起了，如梦一样，永远忘不了你接受我表白的那一刻，二人的世界都长出了一道彩虹。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInRight" data-wow-delay="500ms" style="height: 360px">
+                        <div class="featured-content-box text-center">
+                            <i class="tn-heart ico-lg text-warning" style="color: #22c668"></i>
+                            <h3>一周年</h3>
+                            <p>2020年12月23日，从未想过你我的第一年纪念日到来的如此之快，照这个架势，银婚金婚都不在话下了。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--our-story-->
+    <section class="our-story" id="our-story" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center section-intro">
+              <h2 class="header-boxed wow zoomIn" data-wow-iteration="1"><span>我们的故事</span></h2>
+        <p class="lead wow fadeInUp"  data-wow-delay="600ms">我们的故事我们的故事我们的故事我们的故事我们的故事</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="more info/story_1.jpg"/>
+                        <!--跳转到第一个故事-->
+                        <button class="btn btn-primary btn-sm" role="button" onclick="window.open('more info/story_1.html')">更多</button>
+                    </div>
+                    <div class="panel-body text-center" style="margin-top: -10px">
+                        <h4 class="panel-header">你的生日</h4>
+                        <small style="margin-top: 50px; display: inline-block">
+                            一起给你过的第一次生日<br>有自己制作的蛋糕<br>有爱吃的川菜<br>有你有我
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="https://unsplash.imgix.net/41/bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg?q=75&fm=jpg&s=a760fd82863937c841f4b3870cdef011" />
+                        <!--跳转到第二个故事-->
+                        <img src="more info/story_2.jpg"/>
+                        <button class="btn btn-primary btn-sm" role="button" onclick="window.open('more info/story_2.html')">更多</button>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">大长腿</h4>
+                        <small style="margin-top: 50px; display: inline-block">
+                            一起跟大长腿唱歌<br>你的声音我爱了哟<br>发现了神奇的鱼本鱼<br>总之我爱了
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default panel-card">
+                    <div class="panel-heading">
+                        <img src="more info/story_3.jpg"/>
+                        <!--跳转到第三个故事-->
+                        <button class="btn btn-primary btn-sm" role="button" onclick="window.open('more info/story_3.html')">更多</button>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">来来回回</h4>
+                        <small style="margin-top: 50px; display: inline-block">
+                            每次都在老地方见面<br>下一个惊喜会是什么呢
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default panel-card row2">
+                    <div class="panel-heading">
+                        <img src="more info/story_4.jpg"/>
+                        <!--跳转到第四个故事-->
+                        <button class="btn btn-primary btn-sm" role="button" onclick="window.open('more info/story_4.html')">更多</button>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">我的生日</h4>
+                        <small style="margin-top: 50px; display: inline-block">
+                            空前<br>超前<br>最宏大的一次生日<br>没有之一
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default panel-card row2">
+                    <div class="panel-heading">
+                        <img src="more info/story_5.jpg" />
+                        <!--跳转到第五个故事-->
+                        <button class="btn btn-primary btn-sm" role="button" onclick="window.open('more info/story_5.html')">更多</button>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">簋街之行</h4>
+                        <small style="margin-top: 50px; display: inline-block">
+                            没想到啊没想到<br>居然这么好吃<br>还有小学零食铺诶
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default panel-card row2">
+                    <div class="panel-heading">
+                        <img src="more info/story_6.jpg" />
+                        <!--跳转到第六个故事-->
+                        <button class="btn btn-primary btn-sm" role="button" onclick="window.open('more info/story_6.html')">更多</button>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="panel-header">我们的日常</h4>
+                        <small style="margin-top: 50px; display: inline-block">
+                            幸福是我们的日常<br>幸福的画面在我脑中萦绕<br>不，沙雕才是
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--next-move-->
+    <section class="next-move" id="next-move">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center section-intro">
+                    <h2 class="header-boxed wow zoomIn" data-wow-iteration="1"><span>后续会添加的功能</span></h2>
+                    <p class="lead wow fadeInUp" data-wow-delay="200ms">相册，留言板，添加故事旅程</p>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speach">
+                        可以上传最爱的美图！！！
+                        <div class="media person">
+                            <div class="pull-left">
+                                <img src="imgs/user_1.jpg" class="img-circle">
+                            </div>
+                            <div class="media-body">
+                                1.相册功能
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speach">
+                        字面意思
+                        <div class="media person">
+                            <div class="pull-left">
+                                <img src="imgs/user_2.jpg" class="img-circle">
+                            </div>
+                            <div class="media-body">
+                                2.留言板功能
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speach">
+                        等等嗷
+                        <div class="media person">
+                            <div class="pull-left">
+                                <img src="imgs/user_3.jpg" class="img-circle">
+                            </div>
+                            <div class="media-body">
+                                3.添加我们的故事和旅程
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!--完成-->
+    <!--footer-->
+    <footer>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12 text-center section-intro">
+        <hr/>
+        <a target="_blank" href="special/special.html"><h2><img src="imgs/logo.png" /></h2></a>
+        京ICP备2020045950号
+    </div>
+    </div>
+    </div>
+        <br/><br/>
+    </footer>
+
+</body>
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/site.js"></script>
+<script type="text/javascript">
+    var temp = document.getElementById('time')
+
+
+    window.onload=function starttime(){
+        time(temp, '2019.12.23');
+        ptimer = setTimeout(starttime,1000); // 添加计时器
+    }
+
+    function time(obj,futimg){
+        var nowtime = new Date().getTime(); // 现在时间转换为时间戳
+        var futruetime =  new Date(futimg).getTime(); // 未来时间转换为时间戳
+        var msec = nowtime-futruetime; // 毫秒 未来时间-现在时间
+        var time = (msec/1000);  // 毫秒/1000
+        var day = parseInt(time/86400); // 天  24*60*60*1000
+        temp.innerHTML=""+day+"天了<br>"
+        return true;
+    }
+
+    function password() {
+        var testV = 1;
+        var pass1 = prompt('请输入在一起的时间','');
+        while (testV < 2) {
+            if (pass1 == "20191223") {
+                alert('密码正确!');
+                break;
+            }
+            testV+=1;
+            var pass1 =
+                prompt('密码错误!请重新输入:');
+        }
+        if (pass1!="password" & testV == 2)
+            window.location.href = window.document.referrer;
+        return ""
+    }
+    document.write(password());
+</script>
+
+</html>
